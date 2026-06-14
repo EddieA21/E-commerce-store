@@ -1,0 +1,14 @@
+ALTER TABLE `ecommerce`.`user_tags`
+ADD INDEX `fk_user_tags_2_idx` (`tag_id` ASC) VISIBLE;
+;
+ALTER TABLE `ecommerce`.`user_tags`
+ADD CONSTRAINT `fk_user_tags_1`
+  FOREIGN KEY (`user_id`)
+  REFERENCES `ecommerce`.`users` (`id`)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+ADD CONSTRAINT `fk_user_tags_2`
+  FOREIGN KEY (`tag_id`)
+  REFERENCES `ecommerce`.`tags` (`id`)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE;

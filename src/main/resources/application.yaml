@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: store
+  jwt:
+    secret: ${JWT_SECRET}
+  profiles:
+    active: dev
+paystack:
+  secret: ${PAYSTACK_SECRET}
