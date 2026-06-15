@@ -17,7 +17,7 @@ public class JwtService {
     private String secret;
 
     public String generateAccessToken(User user) {
-        final long tokenExpiration = 7200;
+        final long tokenExpiration = 300;
 
         return generateToken(user, tokenExpiration);
     }
