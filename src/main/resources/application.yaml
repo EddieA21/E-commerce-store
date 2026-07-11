@@ -1,9 +1,18 @@
 spring:
   application:
     name: store
-  jwt:
-    secret: ${JWT_SECRET}
   profiles:
     active: dev
+
+  ai:
+    openai:
+      api-key: ${OPENROUTER_KEY}
+      base-url: https://openrouter.ai/api/v1
+      model: deepseek/deepseek-chat
+      temperature: 0.3
+      max-tokens: 800
+  jwt:
+    secret: ${JWT_SECRET}
+
 paystack:
   secret: ${PAYSTACK_SECRET}

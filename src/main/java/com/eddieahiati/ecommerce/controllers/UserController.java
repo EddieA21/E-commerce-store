@@ -1,8 +1,6 @@
 package com.eddieahiati.ecommerce.controllers;
 
-import com.eddieahiati.ecommerce.dtos.UpdateUserRequest;
-import com.eddieahiati.ecommerce.dtos.UserDto;
-import com.eddieahiati.ecommerce.dtos.UserRequest;
+import com.eddieahiati.ecommerce.dtos.*;
 import com.eddieahiati.ecommerce.entities.Profile;
 import com.eddieahiati.ecommerce.entities.Role;
 import com.eddieahiati.ecommerce.mappers.UserMapper;
