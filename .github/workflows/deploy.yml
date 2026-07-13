@@ -22,6 +22,6 @@ jobs:
         run: ./mvnw clean install
       
       - name: Deploy to Railway
-        uses: railwayhq/deploy-action@v1
+        uses: bervProject/railway-deploy@v1
         with:
-          railway-token: ${{ secrets.RAILWAY_SECRET }}
+          railway_token: ${{ secrets.RAILWAY_TOKEN }}
